@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/*Começo da Header*/
+.comeco {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.offer {
+  width: 100%;
+}
+/*Término da Header*/
+
+/*Começo da Main*/
+.maincima {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-bottom: 0.1px solid rgba(165, 161, 161, 0.5);
+  font-size: 12px;
+}
+
+figure img {
+  width: 23vw;
+  cursor: pointer;
+  transition: transform ease 1.3s;
+}
+
+.product {
+  position: relative;
+  border: 2px black;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  background-color: gray;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  transform: translateY(100%);
+  transition: transform ease 1s;
+  background-color: rgba(92, 167, 32, 0.6);
+}
+
+.product:hover figcaption {
+  transform: translateY(0);
+}
+
+.product:hover img {
+  transform: scale(1.2);
+}
+
+.primeirasec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionproduct {
+  border: solid 0.1px white;
+  display: flex;
+  height: 230vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 88vw;
+}
+
+.boxcard {
+  width: 22vw;
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 20px;
+  text-decoration: underline;
+  color: rgba(92, 167, 32, 1);
+}
+
+.imgbaixo {
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 15px;
+  width: 10vw;
+  height: 5vh;
+  background-color: rgba(92, 167, 32, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background-color: rgba(81, 34, 0, 0.74);
+  transition: 0.1s;
+}
+/*Término da Main*/
+
+/*Começo do Footer*/
+footer {
+  width: 100%;
+  height: 45vh;
+
+  background-color: rgba(165, 161, 161, 0.1);
+  border-top: 2px solid rgba(165, 161, 161, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  border-bottom: 0.1px solid rgba(165, 161, 161, 0.5);
+}
+
+.divfooter {
+  width: 50%;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+ul {
+  cursor: pointer;
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input {
+  width: 20vw;
+  height: 6vh;
+  border: 0.5px solid rgba(165, 161, 161, 0.2);
+}
+
+.buttonft {
+  border-radius: 0.5;
+  width: 8vw;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.logosfooter {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+figure .logos2 {
+  width: 10vw;
+  padding-top: 20px;
+}
+
+figure .logos {
+  width: 6vw;
+  padding-top: 20px;
+}
+li {
+  list-style: none;
+}
+/*Término do Footer*/
+
+/*Começo do @media*/
+
+@media (max-width: 640px) {
+  .comeco {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .maincima {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  figure img {
+    width: 40vw;
+  }
+  .sectionproduct {
+    height: 240vh;
+
+    width: 88vw;
+  }
+
+  .boxcard {
+    width: 40vw;
+
+    height: 40vh;
+  }
+
+  label {
+    font-size: 15px;
+    /* border: solid 1px darkgreen; */
+  }
+
+  .secfooter {
+    /* border: solid 1px magenta; */
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .divfooter {
+    /* border: solid 1px darkorange; */
+    font-size: 15px;
+    height: 20vh;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    /* border: solid 1px; */
+    font-size: 10px;
+    width: 50%;
+    height: 4vh;
+  }
+
+  .logosfooter {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  figure .logos2 {
+    width: 18vw;
+    padding-top: 10px;
+  }
+
+  figure .logos {
+    width: 12vw;
+    padding-top: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    width: 20vw;
+  }
+
+  .buttonft {
+    width: 15vw;
+    height: 3vh;
+    font-size: 12px;
+  }
+
+  .imgbaixo {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 340px) {
+  .comeco {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .imgcomeco {
+    width: 30vw;
+  }
+
+  .maincima {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 8px;
+  }
+  .buttonft {
+    /* width: 15vw;
+    height: 3vh; */
+    font-size: 10px;
+  }
+}
+@media (max-width: 240px) {
+  figure img {
+    width: 100%;
+  }
+  .sectionproduct {
+    height: 430vh;
+  }
+
+  .boxcard {
+    width: 100%;
+  }
+  button {
+    font-size: 15px;
+    width: 30vw;
+  }
+
+  input {
+    font-size: 8px;
+    width: 70%;
+    height: 3vh;
+  }
+
+  .buttonft {
+    width: 20vw;
+    height: 3vh;
+    font-size: 10px;
+  }
+}
+@media (max-width: 160px) {
+  .imgcomeco {
+    width: 35vw;
+  }
+
+  .maincima {
+    font-size: 8px;
+  }
+
+  button {
+    font-size: 15px;
+    width: 40vw;
+  }
+  .secfooter {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .divfooter {
+    font-size: 10px;
+  }
+
+  input {
+    font-size: 8px;
+    width: 70%;
+  }
+
+  .buttonft {
+    width: 23vw;
+
+    font-size: 8px;
+  }
+
+  .logosfooter {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  figure .logos2 {
+    width: 25vw;
+  }
+
+  figure .logos {
+    width: 18vw;
+  }
+
+  label {
+    font-size: 10px;
+  }
+}
+
+/*Término do @media*/
